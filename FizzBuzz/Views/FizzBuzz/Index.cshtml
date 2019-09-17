@@ -1,0 +1,17 @@
+﻿@model FizzBuzz.Models.FizzBuzzModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm("CalculateFizzBuzz", "FizzBuzz", FormMethod.Post ))
+{
+    <p>Enter Fizz Buzz Input</p>
+    @Html.TextBoxFor(x => x.input);
+
+    <input type="submit" value="Submit">
+
+}
+
